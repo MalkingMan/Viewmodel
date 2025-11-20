@@ -24,3 +24,15 @@ fun SiswaApp(
     viewModel: SiswaViewModel = androidx.lifecycle.viewmodel.compose.viewModel(),
     navController: NavHostController = rememberNavController()
 ) {
+
+    // edit 2 : tambahkan variabel uiState
+    val uiState = viewModel.statusUI.collectAsState()
+
+    Scaffold { isiRuang ->
+        NavHost(
+            navController = navController,
+            startDestination = Navigasi.Formulir.name,
+            modifier = Modifier.padding(isiRuang)
+        ) {
+
+        }
