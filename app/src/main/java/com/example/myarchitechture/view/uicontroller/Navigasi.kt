@@ -34,5 +34,12 @@ fun SiswaApp(
             startDestination = Navigasi.Formulir.name,
             modifier = Modifier.padding(isiRuang)
         ) {
+            // ============================
+            // FORMULIR SCREEN
+            // ============================
+            composable(route = Navigasi.Formulir.name) {
 
-        }
+                // edit 3 : tambahkan variabel konteks
+                val konteks = LocalContext.current
+
+            }
