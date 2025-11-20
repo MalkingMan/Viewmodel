@@ -1,4 +1,4 @@
-package com.example.Myarchitechture.model
+package com.example.myarchitechture.model
 
 import com.example.viewmodel.R
 

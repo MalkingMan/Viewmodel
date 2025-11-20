@@ -1,4 +1,4 @@
-package com.example.Myarchitechture
+package com.example.myarchitechture
 
 import org.junit.Test
 

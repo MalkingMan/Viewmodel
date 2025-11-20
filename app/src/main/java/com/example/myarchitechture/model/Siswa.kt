@@ -1,4 +1,4 @@
-package com.example.Myarchitechture.model
+package com.example.myarchitechture.model
 
 
 data class Siswa(

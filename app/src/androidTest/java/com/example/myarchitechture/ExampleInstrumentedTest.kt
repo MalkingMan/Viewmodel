@@ -1,4 +1,4 @@
-package com.example.Myarchitechture
+package com.example.myarchitechture
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
