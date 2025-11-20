@@ -30,4 +30,18 @@ fun TampilSiswa(
                 )
             )
         }
+
+    ) { isiRuang ->
+
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .padding(16.dp),
+            verticalArrangement = Arrangement.SpaceBetween
+        ) {
+
+            Column(
+                modifier = Modifier.padding(all = dimensionResource(id = R.dimen._16dp)),
+                verticalArrangement = Arrangement.spacedBy(space = dimensionResource(id = R.dimen._10dp))
+            ) {
 }
