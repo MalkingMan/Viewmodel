@@ -64,5 +64,13 @@ fun TampilSiswa(
                 modifier = Modifier.height(height = dimensionResource(id = R.dimen._10dp))
             )
 
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = onBackButtonClicked
+            ) {
+                Text(text = stringResource(id = R.string.back))
+            }
         }
+    }
 }
+
