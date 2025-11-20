@@ -1,5 +1,15 @@
 package com.example.myarchitechture.view.uicontroller
 
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormSiswa(
@@ -16,7 +26,22 @@ fun FormSiswa(
     var txtGender by remember { mutableStateOf(value = "") }
     val listData: MutableList<String> = mutableListOf(txtNama, txtGender, txtAlamat)
 
-    Scaffold(modifier = modifier) {
-        // isi form nanti di sini
+    Scaffold(
+        modifier = Modifier,
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = stringResource(id = R.string.app_name),
+                        color = Color.White
+                    )
+                },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    containerColor = colorResource(id = R.color.purple_500)
+                )
+            )
+        }
+    ) { isiRuang ->
+
     }
 }
