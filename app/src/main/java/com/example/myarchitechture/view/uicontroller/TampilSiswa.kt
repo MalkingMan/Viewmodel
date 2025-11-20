@@ -44,4 +44,25 @@ fun TampilSiswa(
                 modifier = Modifier.padding(all = dimensionResource(id = R.dimen._16dp)),
                 verticalArrangement = Arrangement.spacedBy(space = dimensionResource(id = R.dimen._10dp))
             ) {
+                items.forEach { item ->
+                    Column {
+                        Text(
+                            text = item.first.uppercase(),
+                            fontSize = 16.sp
+                        )
+                        Text(
+                            text = item.second,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 16.sp
+                        )
+                    }
+
+                    Divider(thickness = dimensionResource(id = R.dimen._1dp))
+                }
+            }
+            Spacer(
+                modifier = Modifier.height(height = dimensionResource(id = R.dimen._10dp))
+            )
+
+        }
 }
