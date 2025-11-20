@@ -1,6 +1,6 @@
 package com.example.myarchitechture.model
 
-import com.example.viewmodel.R
+import com.example.myarchitechture.R
 
 object DataJK {
     val JenisK=listOf(
