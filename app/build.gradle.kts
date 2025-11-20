@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.viewmodel"
+    namespace = "com.example.Myarchitechture"
     compileSdk {
         version = release(36)
     }

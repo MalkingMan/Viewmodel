@@ -1,4 +1,4 @@
-package com.example.viewmodel
+package com.example.Myarchitechture
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.viewmodel.ui.theme
+package com.example.Myarchitechture.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
