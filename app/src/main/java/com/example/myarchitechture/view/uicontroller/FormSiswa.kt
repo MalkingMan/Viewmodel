@@ -18,7 +18,9 @@ fun FormSiswa(
     pilihanJK: List<String>,
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
     modifier: Modifier = Modifier
-) {
+)
+
+{
 
     // edit 2 : tambahkan 4 variabel di bawah ini
     var txtNama by rememberSaveable { mutableStateOf(value = "") }
@@ -42,6 +44,27 @@ fun FormSiswa(
             )
         }
     ) { isiRuang ->
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .padding(20.dp),
+            verticalArrangement = Arrangement.SpaceBetween,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
 
-    }
+            // Input Nama
+            OutlinedTextField(
+                value = txtNama,
+                singleLine = true,
+                shape = MaterialTheme.shapes.medium,
+                modifier = Modifier
+                    .width(250.dp)
+                    .padding(top = 20.dp),
+                label = { Text(text = "Nama Lengkap") },
+                onValueChange = {
+                    txtNama = it
+                }
+            )
+
+        }
 }
